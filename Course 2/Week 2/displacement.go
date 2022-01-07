@@ -59,7 +59,7 @@ func main() {
     fmt.Print("Enter value for initial displacement: ")
     fmt.Scan(&so)
 
-    fn := GenDisplaceFn(10, 2, 1)
+    fn := GenDisplaceFn(a, vo, so)
 
     fmt.Println("Displacement after 3 seconds is", fn(3))
     fmt.Println("Displacement after 5 seconds is", fn(5))
