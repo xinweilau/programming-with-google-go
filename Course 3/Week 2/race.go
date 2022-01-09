@@ -29,7 +29,8 @@ func decrement() {
     The race condition can be detected by go race detector tool by running the command:
     <go run race.go -race> or simply running the code using: <go run race.go>
 
-    Race condition is when two processes/threads tries to access and modify the same piece of data at the same time.
+    Race condition is when two processes/threads tries to access and modify the same piece of data at the same time. The
+    output of the program is dependent on the interleaving of the instructions.
 
     The race condition in this code comes from the accessing the shared global variable counter.
     Both functions increment() and decrement() first stores the copy of counter, followed by
